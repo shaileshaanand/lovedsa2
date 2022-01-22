@@ -278,7 +278,6 @@
       }
     ]
   },
-  { "title": "Arrays", "questions": [] },
   {
     "title": "String",
     "questions": [
@@ -838,10 +837,6 @@
         "url": "https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1"
       },
       {
-        "title": "Add two numbers represented as linked list",
-        "url": "https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1"
-      },
-      {
         "title": "Multiply two linked lists",
         "url": "https://practice.geeksforgeeks.org/problems/multiply-two-linked-lists/1"
       },
@@ -1246,7 +1241,7 @@
       },
       {
         "title": "k-th smallest element in BST",
-        "url": "https://practice.geeksforgeeks.org/topics/Binary%20Search%20Tree/"
+        "url": "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1"
       },
       {
         "title": "Unique BST\u2019s",
@@ -1360,7 +1355,7 @@
       },
       {
         "title": "Find first n numbers with given set of digits",
-        "url": "https://www.geeksforgeeks.org/n-th-number-with-digits-in-0-1-2-3-4-5/"
+        "url": "https://practice.geeksforgeeks.org/problems/special-numbers4116/1/"
       },
       {
         "title": "Rotten oranges",
@@ -1517,143 +1512,6 @@
         "url": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0"
       },
       {
-        "title": "Maximum Tip Calculator",
-        "url": "https://practice.geeksforgeeks.org/problems/maximum-tip-calculator/0"
-      },
-      {
-        "title": "Interleaved string",
-        "url": "https://practice.geeksforgeeks.org/problems/interleaved-strings/1"
-      },
-      {
-        "title": "Longest Palindromic Subsequence",
-        "url": "https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0"
-      },
-      {
-        "title": "Wildcard Pattern Matching",
-        "url": "https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1"
-      },
-      {
-        "title": "Box Stacking",
-        "url": "https://practice.geeksforgeeks.org/problems/box-stacking/1"
-      },
-      {
-        "title": "Longest Bitonic subsequence",
-        "url": "https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0"
-      },
-      {
-        "title": "Minimum sum partition",
-        "url": "https://practice.geeksforgeeks.org/problems/minimum-sum-partition/0"
-      },
-      {
-        "title": "Largest square formed in a matrix",
-        "url": "https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix/0"
-      },
-      {
-        "title": "Word Break",
-        "url": "https://practice.geeksforgeeks.org/problems/word-break/0"
-      },
-      {
-        "title": "Matrix Chain Multiplication",
-        "url": "https://practice.geeksforgeeks.org/problems/brackets-in-matrix-chain-multiplication/0"
-      },
-      {
-        "title": "Special Keyboard",
-        "url": "https://practice.geeksforgeeks.org/problems/special-keyboard/0"
-      },
-      {
-        "title": "Egg Dropping Puzzle",
-        "url": "https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0"
-      },
-      {
-        "title": "Optimal Strategy for a Game",
-        "url": "https://practice.geeksforgeeks.org/problems/tom-and-jerry/0"
-      }
-    ]
-  },
-  {
-    "title": "Dynamic Programming",
-    "questions": [
-      {
-        "title": "Print first n Fibonacci Numbers.",
-        "url": "https://practice.geeksforgeeks.org/problems/print-first-n-fibonacci-numbers/0"
-      },
-      {
-        "title": "Count ways to reach the n\u2019th stair",
-        "url": "https://practice.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair/0"
-      },
-      {
-        "title": "Cutted Segments",
-        "url": "https://practice.geeksforgeeks.org/problems/cutted-segments/0"
-      },
-      {
-        "title": "Kadane\u2019s Algorithm",
-        "url": "https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0"
-      },
-      {
-        "title": "Stickler Thief",
-        "url": "https://practice.geeksforgeeks.org/problems/stickler-theif/0"
-      },
-      {
-        "title": "Minimum number of jumps",
-        "url": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0"
-      },
-      {
-        "title": "Total Decoding Messages",
-        "url": "https://practice.geeksforgeeks.org/problems/total-decoding-messages/0"
-      },
-      {
-        "title": "Min Cost Path",
-        "url": "https://practice.geeksforgeeks.org/problems/minimum-cost-path/0"
-      },
-      {
-        "title": "Coin Change",
-        "url": "https://practice.geeksforgeeks.org/problems/coin-change/0"
-      },
-      {
-        "title": "Longest Common Subsequence",
-        "url": "https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0"
-      },
-      {
-        "title": "Consecutive 1\u2019s not allowed",
-        "url": "https://practice.geeksforgeeks.org/problems/consecutive-1s-not-allowed/0"
-      },
-      {
-        "title": "Edit Distance",
-        "url": "https://practice.geeksforgeeks.org/problems/edit-distance/0"
-      },
-      {
-        "title": "Rod Cutting",
-        "url": "https://practice.geeksforgeeks.org/problems/rod-cutting/0"
-      },
-      {
-        "title": "Water Overflow",
-        "url": "https://practice.geeksforgeeks.org/problems/champagne-overflow/0"
-      },
-      {
-        "title": "Maximum Tip Calculator",
-        "url": "https://practice.geeksforgeeks.org/problems/maximum-tip-calculator/0"
-      },
-      {
-        "title": "Longest Increasing Subsequence",
-        "url": "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0"
-      },
-      {
-        "title": "Maximum sum increasing subsequence",
-        "url": "https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0"
-      },
-      {
-        "title": "Max length chain",
-        "url": "https://practice.geeksforgeeks.org/problems/max-length-chain/1"
-      },
-      {
-        "title": "0 \u2013 1 Knapsack Problem",
-        "url": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0"
-      },
-      {
-        "title": "Maximum Tip Calculator",
-        "url": "https://practice.geeksforgeeks.org/problems/maximum-tip-calculator/0"
-      },
-      {
         "title": "Interleaved string",
         "url": "https://practice.geeksforgeeks.org/problems/interleaved-strings/1"
       },
@@ -1790,7 +1648,7 @@
       },
       {
         "title": "Smallest greater elements in whole array",
-        "url": "https://www.geeksforgeeks.org/smallest-greater-elements-in-whole-array/"
+        "url": "https://practice.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array2751/1/"
       },
       {
         "title": "Max rectangle",
