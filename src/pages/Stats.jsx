@@ -130,7 +130,7 @@ const Stats = ({ username, essential }) => {
           )}
         </Button>
       </p>
-      <div className="flex flex-col gap-2 md:gap-8 items-center md:flex-row mb-10">
+      <div className="flex flex-col gap-2 md:gap-8 items-center md:flex-row mb-5 mt-5 md:mt-0 md:mb-10">
         <Link href={`/${username}/full`}>
           <OverallStatCard
             title="Full GFG DSA Set"
