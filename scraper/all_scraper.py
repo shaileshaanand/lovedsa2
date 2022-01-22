@@ -39,4 +39,5 @@ def parse_page(soup):
     return sections[:-1]
 
 
-print(json.dumps(parse_page(fetch_page(URL)), indent=2))
+if __name__ == "__main__":
+    print(json.dumps(parse_page(fetch_page(URL)), indent=2))
