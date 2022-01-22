@@ -4,5 +4,8 @@ import Stats from "./pages/Stats";
 export const routes = {
   "/": () => <Login />,
   // "/login": () => <Login />,
-  "/:username": ({ username }) => <Stats username={username} />,
+  "/:username/full": ({ username }) => <Stats username={username} />,
+  "/:username/essential": ({ username }) => (
+    <Stats username={username} essential />
+  ),
 };

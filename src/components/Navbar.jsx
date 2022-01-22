@@ -2,7 +2,7 @@ import React from "react";
 import { ActiveLink } from "raviger";
 const Navbar = () => {
   return (
-    <div className="w-screen bg-primary-100 flex justify-between text-3xl py-3 px-5 items-center">
+    <div className="bg-primary-100 flex justify-between text-3xl py-3 px-5 items-center">
       <p>GFG Nirvana</p>
       <ActiveLink
         href="/"
