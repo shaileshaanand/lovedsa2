@@ -37,7 +37,7 @@ const TopicStats = ({ questions, title }) => {
               href={question.url}
               key={question.url}
               target="_blank"
-              className="flex cursor-pointer hover:shadow-centered flex-shrink-0 flex-grow-0 items-center gap-8 rounded-lg border border-primary-300 px-5 py-3"
+              className="flex cursor-pointer hover:shadow-centered transition-shadow flex-shrink-0 flex-grow-0 items-center gap-8 rounded-lg border border-primary-300 px-5 py-3"
             >
               {question.completed ? (
                 <svg
