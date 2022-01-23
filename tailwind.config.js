@@ -20,6 +20,9 @@ module.exports = {
         },
       },
       animation: { spinreverse: "spinreverse 1s linear infinite" },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],

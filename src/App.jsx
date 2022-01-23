@@ -5,6 +5,7 @@ import { routes } from "./routes";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 const App = () => {
   let route = useRoutes(routes);
@@ -13,6 +14,7 @@ const App = () => {
       <div>
         <Navbar />
         {route}
+        <Footer />
       </div>
       <Toaster
         position="top-right"
