@@ -7,8 +7,8 @@ const OverallStatCard = ({ title, total, completed, faded }) => {
   const value = completed / total;
   return (
     <div
-      className={` border-2 border-primary-200 w-max rounded-xl h-22 p-3 ${
-        faded && "opacity-40"
+      className={`hover:shadow-primary border-2 border-primary-200 rounded-xl h-22 p-3 ${
+        faded ? "opacity-40" : "shadow-primary"
       }`}
     >
       <div className="flex h-full gap-6 items-center">

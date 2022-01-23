@@ -130,8 +130,8 @@ const Stats = ({ username, essential }) => {
           )}
         </Button>
       </p>
-      <div className="flex flex-col gap-2 md:gap-8 items-center md:flex-row mb-5 mt-5 md:mt-0 md:mb-10">
-        <Link href={`/${username}/full`}>
+      <div className="flex flex-col gap-2 md:gap-8 items-stretch md:flex-row mb-5 mt-5 md:mt-0 md:mb-10">
+        <Link href={`/${username}/full`} className="block">
           <OverallStatCard
             title="Full GFG DSA Set"
             total={full_total}
@@ -139,7 +139,7 @@ const Stats = ({ username, essential }) => {
             faded={essential}
           />
         </Link>
-        <Link href={`/${username}/essential`}>
+        <Link href={`/${username}/essential`} className="block">
           <OverallStatCard
             title="Essential GFG DSA Set"
             total={subset_total}
