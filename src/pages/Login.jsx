@@ -29,7 +29,7 @@ const Login = () => {
         className="flex flex-col max-w-md mx-3 gap-3 md:mx-auto"
         onSubmit={(e) => {
           e.preventDefault();
-          refetch();
+          username ? refetch() : toast.error("Please enter your GFG username");
         }}
       >
         <input
