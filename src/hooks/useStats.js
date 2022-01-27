@@ -3,9 +3,11 @@ export const useStats = (username, config) => {
   return useQuery(
     "stats",
     () =>
-      fetch(`https://gfgapistaging.herokuapp.com/${username}`).then((res) => {
-        return res.json();
-      }),
+      fetch(`https://geeks-for-geeks-api-lyart.vercel.app/${username}`).then(
+        (res) => {
+          return res.json();
+        }
+      ),
     config
   );
 };
