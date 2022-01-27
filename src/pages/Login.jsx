@@ -8,7 +8,6 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const { data, isLoading, error, refetch, isFetching } = useStats(username, {
     onSuccess: (data) => {
-      // toast.success("Successfully logged in!");
       if (data.info?.name) {
         console.log("Successfully logged in!");
         toast.success(`Logged in as ${data.info.name}`);
