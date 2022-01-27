@@ -9,7 +9,10 @@ const Navbar = () => {
         href="/"
         className="bg bg-primary-300 text-white px-6 py-2 text-xl rounded-xl"
         exactActiveClass="invisible"
-        onClick={() => toast.success("Logged out!")}
+        onClick={() => {
+          localStorage.removeItem("username");
+          toast.success("Logged out!");
+        }}
       >
         Logout
       </ActiveLink>
