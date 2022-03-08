@@ -9,7 +9,6 @@ const Login = () => {
   const { data, isLoading, error, refetch, isFetching } = useStats(username, {
     onSuccess: (data) => {
       if (data.info?.name) {
-        console.log("Successfully logged in!");
         toast.success(`Logged in as ${data.info.name}`);
         localStorage.setItem("username", username);
         navigate(`/${username}/essential`);
