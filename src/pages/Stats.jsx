@@ -59,20 +59,27 @@ const Stats = ({ username, essential }) => {
     sections.map((section) => {
       return {
         ...section,
-        questions: section.questions.map((question) => {
-          const questionId =
-            /https?:\/\/practice.geeksforgeeks.org\/problems\/([^\/]+)\/?(?:\/\d+)?\/?/
-              .exec(question.url)[1]
-              .toLowerCase();
+        questions: section.questions
+          .map((question) => {
+            const questionId =
+              /https?:\/\/practice.geeksforgeeks.org\/problems\/([^\/]+)\/?(?:\/\d+)?\/?/
+                .exec(question.url)[1]
+                .toLowerCase();
 
-          return {
-            ...question,
-            completed:
-              completedQuestionIds.filter(
-                (id) => id?.includes(questionId) || questionId?.includes(id)
-              ).length > 0,
-          };
-        }),
+            return {
+              ...question,
+              completed:
+                completedQuestionIds.filter(
+                  (id) => id?.includes(questionId) || questionId?.includes(id)
+                ).length > 0,
+            };
+          })
+          .sort((question1, question2) => {
+            return (
+              question1.difficulty - question2.difficulty ||
+              question2.accuracy - question1.accuracy
+            );
+          }),
       };
     });
 
