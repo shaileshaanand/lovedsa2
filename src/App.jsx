@@ -11,7 +11,7 @@ const App = () => {
   let route = useRoutes(routes);
   return (
     <QueryClientProvider client={new QueryClient()}>
-      <div>
+      <div className="min-h-screen flex flex-col justify-between">
         <Navbar />
         {route}
         <Footer />

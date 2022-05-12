@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <div className="">
-      <p className="text-2xl text-center my-2 mx-6 mt-40">
+      <p className="text-2xl text-center my-2 mx-6">
         Please login with your GeeksForGeeks id
       </p>
       <form
