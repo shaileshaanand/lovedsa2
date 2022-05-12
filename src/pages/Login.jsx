@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 const Login = () => {
   const [username, setUsername] = useState("");
+  const [randomUser, setRandomUser] = useState(false);
   const { data, isLoading, error, refetch, isFetching } = useStats(username, {
     onSuccess: (data) => {
       if (data.info?.name) {
@@ -25,6 +26,12 @@ const Login = () => {
       navigate(`/${username}/essential`);
     }
   }, []);
+
+  useEffect(() => {
+    if (randomUser) {
+      refetch();
+    }
+  }, [randomUser]);
 
   return (
     <div className="">
@@ -73,6 +80,15 @@ const Login = () => {
             "Login"
           )}
         </Button>
+        <p
+          className="text-center text-sm hover:underline cursor-pointer"
+          onClick={() => {
+            setUsername("NamanKhandelwal3");
+            setRandomUser(true);
+          }}
+        >
+          Login with a random username
+        </p>
       </form>
     </div>
   );
