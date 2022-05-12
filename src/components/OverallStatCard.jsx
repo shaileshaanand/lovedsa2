@@ -3,7 +3,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import ProgressProvider from "./ProgressProvider";
 
-const OverallStatCard = ({ title, total, completed, faded }) => {
+const OverallStatCard = ({ title, total, completed, faded, isLoading }) => {
   const value = completed / total;
   return (
     <div
@@ -30,7 +30,11 @@ const OverallStatCard = ({ title, total, completed, faded }) => {
         </div>
         <div>
           <p className="font font-semibold text-lg mb-1">{title}</p>
-          <p>{`${completed} of ${total} Questions Solved`}</p>
+          {isLoading ? (
+            <div className="h-[1rem] w-[210px] bg-gray-400 animate-pulse rounded"></div>
+          ) : (
+            <p className=" text-base">{`${completed} of ${total} Questions Solved`}</p>
+          )}
         </div>
       </div>
     </div>

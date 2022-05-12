@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressProvider from "./ProgressProvider";
 
-const TopicStats = ({ questions, title }) => {
+const TopicStats = ({ questions, title, isLoading }) => {
   const total = questions.length;
   const completed = questions.filter((question) => question.completed).length;
   const progress_value = completed / total;
@@ -17,16 +17,22 @@ const TopicStats = ({ questions, title }) => {
             </span>{" "}
             <p>{(progress_value * 100).toFixed(2)}%</p>
           </div>
-          <ProgressProvider valueStart={0} valueEnd={progress_value}>
-            {(value) => (
-              <div className="w-full h-3 bg-primary-100 rounded-full overflow-clip">
+          {
+            <ProgressProvider valueStart={0} valueEnd={progress_value}>
+              {(value) => (
                 <div
-                  className="h-full bg-primary-300 rounded-full transition-all ease-out duration-[600ms]"
-                  style={{ width: `${value * 100}%` }}
-                ></div>
-              </div>
-            )}
-          </ProgressProvider>
+                  className={`w-full h-3 bg-primary-100 rounded-full overflow-clip ${
+                    isLoading && "animate-pulse "
+                  }`}
+                >
+                  <div
+                    className="h-full bg-primary-300 rounded-full transition-all ease-out duration-[600ms]"
+                    style={{ width: isLoading ? `100%` : `${value * 100}%` }}
+                  ></div>
+                </div>
+              )}
+            </ProgressProvider>
+          }
         </div>
         <p className="text-center mt-3 text-xl">Questions</p>
       </div>
