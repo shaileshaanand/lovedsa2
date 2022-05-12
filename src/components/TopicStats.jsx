@@ -19,7 +19,7 @@ const TopicStats = ({ questions, title }) => {
           </div>
           <ProgressProvider valueStart={0} valueEnd={progress_value}>
             {(value) => (
-              <div className="w-full h-3 bg-primary-100 rounded-full">
+              <div className="w-full h-3 bg-primary-100 rounded-full overflow-clip">
                 <div
                   className="h-full bg-primary-300 rounded-full transition-all ease-out duration-[600ms]"
                   style={{ width: `${value * 100}%` }}
