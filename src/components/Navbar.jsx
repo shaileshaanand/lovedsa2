@@ -27,14 +27,14 @@ const Navbar = () => {
       </p>
       <ActiveLink
         href="/"
-        className="bg bg-primary-300 text-white px-5 py-2 text-xl rounded-xl flex items-center justify-center gap-2 pr-4"
+        className="bg bg-primary-300 text-white sm:px-5 py-2 text-xl rounded-xl flex items-center justify-center gap-2 sm:pr-4 px-3 pr-2.5"
         exactActiveClass="invisible"
         onClick={() => {
           localStorage.removeItem("username");
           toast.success("Logged out!");
         }}
       >
-        Logout
+        <span className="sm:inline hidden">Logout</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
