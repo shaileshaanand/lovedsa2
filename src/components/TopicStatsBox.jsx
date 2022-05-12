@@ -1,7 +1,7 @@
 import React from "react";
 import TopicStats from "./TopicStats";
 
-const TopicStatsBox = ({ sections }) => {
+const TopicStatsBox = ({ sections, isLoading }) => {
   const questions = [
     {
       title: "Merge two sorted linked lists",
@@ -73,6 +73,7 @@ const TopicStatsBox = ({ sections }) => {
             questions={section.questions}
             title={section.title}
             key={index}
+            isLoading={isLoading}
           />
         );
       })}

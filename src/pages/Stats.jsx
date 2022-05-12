@@ -144,6 +144,7 @@ const Stats = ({ username, essential }) => {
             total={full_total}
             completed={full_completed}
             faded={essential}
+            isLoading={isLoading}
           />
         </Link>
         <Link href={`/${username}/essential`} className="block">
@@ -152,10 +153,11 @@ const Stats = ({ username, essential }) => {
             total={subset_total}
             completed={subset_completed}
             faded={!essential}
+            isLoading={isLoading}
           />
         </Link>
       </div>
-      <TopicStatsBox sections={current_sections} />
+      <TopicStatsBox sections={current_sections} isLoading={isLoading} />
     </div>
   );
 };
